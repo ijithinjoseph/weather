@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./icons/favicon.svg" type="image/x-icon" />
+    <meta
+        name="description"
+        content="Navigate through the intricate patterns of weather with Compass Rose Weather" />
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <form action="" class="citysearch" data-form-search>
+                <img
+                class="searchicon"
+                src="./icons/search.svg"
+                height="20px"
+                sizes=""
+                srcset=""
+                />
+
+                <input
+                type="text"
+                class="cityinput"
+                placeholder="Search"
+                id="searchbar"
+                data-form-input
+                />
+            </form>
+        </div>
+        <div class="current-climate" data-blur-section>
+            <p class="c-forecast" data-forecast-city-name>Bergen Op Zoom</p>
+            <p class="h-forecast" data-forecast-city-temperature>16°</p>
+            <p class="p-forecast" data-forecast-city-condition>Sunny</p>
+        </div>
+        <div class="card-holder" data-blur-section2>
+            <div class="card">
+                <div class="card-title">
+                    <img
+                        src="./icons/feelslike.svg"
+                        height="15px"
+                        width="auto"
+                        alt="termometer"
+                        srcset=""
+                        class="weathericon"
+                        />
+                        <p>FEELS LIKE</p>
+                </div>
+                <p class="card-content" data-forecast-city-feelslike>14°</p>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <img
+                        src="./icons/visibility.svg"
+                        height="15px"
+                        width="auto"
+                        alt="termometer"
+                        srcset=""
+                        class="weathericon"
+                    />
+                    <p>VISIBILITY</p>
+                </div>
+                <p class="card-content" data-forecast-city-visibility>10 km</p>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <img
+                        src="./icons/humidity.svg"
+                        height="15px"
+                        width="auto"
+                        alt="termometer"
+                        srcset=""
+                        class="weathericon"
+                    />
+                    <p>HUMIDITY</p>
+                </div>
+                <p class="card-content" data-forecast-city-humidity>10%</p>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <img
+                        src="./icons/preassure.svg"
+                        height="15px"
+                        width="auto"
+                        alt="termometer"
+                        srcset=""
+                        class="weathericon"
+                    />
+                    <p>PRESSURE</p>
+                </div>
+                <p class="card-content" data-forecast-city-pressure>10 hPA</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
